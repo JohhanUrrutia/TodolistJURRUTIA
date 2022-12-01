@@ -27,6 +27,8 @@ function actualizarPagina(){
 
     listaTareas.innerHTML = html
 
+    /* CREE ARRAY DE LA SELECCIÓN DE TODOS LOS CHECKBOX*/
+
     const checkboxes = document.querySelectorAll(".checkbox")
     const checkboxesArray = Array.from(checkboxes)
     checkboxes.forEach((checkboxSelect) => {
@@ -47,6 +49,8 @@ function actualizarPagina(){
     })
         
 }
+
+/* FUNCIÓN PARA PINTAR EL TOTAL DE TAREAS EN EL DOM */
 
 function actualizarTareas(){
     totalTareas.innerHTML = arrayTareas.length
